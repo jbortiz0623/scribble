@@ -28,8 +28,8 @@ The `.` creates a new Django app inside the *CURRENT* folder. Otherwise, it crea
 
 ### Models + Migrations
 
-1. Create [models](https://git.generalassemb.ly/dc-wdi-python-django/django-models#models---james) for Post and Comment
-2. Create [migrations](https://git.generalassemb.ly/dc-wdi-python-django/django-models#migrations---ali) for Post and Comment
+1. Create models for Post and Comment
+2. Create migrations for Post and Comment
 
 We will start off with two models: `Post` and `Comment`.
 
