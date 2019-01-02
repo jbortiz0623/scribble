@@ -1,0 +1,12 @@
+{% extends 'scribble/base.html' %}
+
+{% block content %}
+<h1> Posts <br><a href="{% url 'post_create' %}">[CREATE A NEW POST]</a></h1>
+{%  for p in posts   %}
+<div>
+    <h1>{{ p.title }}</h1>
+    <p>{{ p.author }}</p>
+    <p>{{ p.body }}</p>
+</div>
+{% endfor %}
+{% endblock %}

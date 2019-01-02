@@ -1,0 +1,9 @@
+{% extends 'scrible/base.html' %}
+
+{% block content %}
+<form method='POST' action='/create'>
+    {% csrf_token %}
+    {{  form.as_p }}
+</form>
+
+{% endblock %}

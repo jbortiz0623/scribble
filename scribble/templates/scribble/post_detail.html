@@ -1,0 +1,14 @@
+{% extends 'scribble/base.html' %}
+
+{% block content %}
+<!-- <h2>{{ post.author }} <a href="{% url 'post_edit' pk=post.pk %}">(edit)</a></h2> -->
+
+<h1> Posts <br><a href="{% url 'scribble/post_create' %}">[CREATE A NEW POST]</a></h1>
+    <ul>
+       
+        <li>
+            <a href="{% url 'scribble/post_detail' pk=post.id %}">{{ post.title }}</a>
+        </li>
+        
+    </ul>
+{% endblock %}
